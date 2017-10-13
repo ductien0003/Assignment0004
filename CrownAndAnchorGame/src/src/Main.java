@@ -50,6 +50,8 @@ public class Main {
                 	System.out.printf("Turn %d: %s bet %d on %s\n",
                 			turn, player.getName(), bet, pick); 
                 	
+			// BUg - Same cards through out game
+
                 	int winnings = game.playRound(player, pick, bet);
                     cdv = game.getDiceValues();
                     
