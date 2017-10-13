@@ -28,8 +28,8 @@ public class Main {
             	String name = "Fred";
             	int balance = 100;
             	int limit = 0;
-            	int balance = 150;
-            	int limit = 15;
+            	int balance = 180;
+            	int limit = 20;
                 player = new Player(name, balance);
                 player.setLimit(limit);
                 int bet = 15;
