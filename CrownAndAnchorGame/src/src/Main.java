@@ -29,7 +29,10 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		System.out.println(Player Name: ");
 		String name = scan.next();
-            	String name = "Fred";
+            	//String name = "Fred";
+		System.out.println(Player's Age: ");
+		int age = scan.nextInt();
+
             	int balance = 100;
             	int limit = 0;
                 player = new Player(name, balance);
