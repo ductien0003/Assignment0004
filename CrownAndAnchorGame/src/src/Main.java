@@ -22,8 +22,8 @@ public class Main {
         {
             int winCount = 0;
             int loseCount = 0;
-            
-            for (int i = 0; i < 100; i++)
+            //Bug- game doesnt check player's age
+            for (int i = 0; i < 10; i++)
             { 
 		//Bug - Name of the player is always FRed.
             	String name = "Fred";
