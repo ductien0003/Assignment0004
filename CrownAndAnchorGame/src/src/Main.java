@@ -79,7 +79,9 @@ public class Main {
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
-        
+
+        //Win Lose Ratio is not as prescribed.
+
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
 	}
 
