@@ -39,6 +39,8 @@ public class Main {
 
 		//Bug - Player amount doesn't increase even if he wins the match
 
+		//Bug- Incorrect increase in the balance when the player wins the match
+
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
