@@ -28,9 +28,11 @@ public class Main {
             	String name = "Fred";
             	int balance = 100;
             	int limit = 0;
+            	int balance = 150;
+            	int limit = 15;
                 player = new Player(name, balance);
                 player.setLimit(limit);
-                int bet = 10;
+                int bet = 15;
 
                 System.out.println(String.format("Start Game %d: ", i));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
