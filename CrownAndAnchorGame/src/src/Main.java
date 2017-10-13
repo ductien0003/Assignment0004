@@ -29,6 +29,8 @@ public class Main {
             	Scanner scan=new Scanner(System.in);
 				System.out.println("Enter Player Name please??");
 				String name = scan.next();
+				System.out.println("Please enter your age??");
+				int age=scan.nextInt();
             	int balance = 100;
             	int limit = 0;
                 player = new Player(name, balance);
