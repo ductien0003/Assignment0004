@@ -1,5 +1,6 @@
 import java.util.List;
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
 	
@@ -25,7 +26,9 @@ public class Main {
             
             for (int i = 0; i < 100; i++)
             {
-            	String name = "Fred";
+            	Scanner scan=new Scanner(System.in);
+				System.out.println("Enter Player Name please??");
+				String name = scan.next();
             	int balance = 100;
             	int limit = 0;
                 player = new Player(name, balance);
