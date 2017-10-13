@@ -22,10 +22,13 @@ public class Main {
         {
             int winCount = 0;
             int loseCount = 0;
-            //Bug- game doesnt check player's age
-            for (int i = 0; i < 10; i++)
+            //Bug- game doesn't check player's age
+            for (int i = 0; i < 100; i++)
             { 
 		//Bug - Name of the player is always FRed.
+		Scanner scan = new Scanner(System.in);
+		System.out.println(Player Name: ");
+		String name = scan.next();
             	String name = "Fred";
             	int balance = 100;
             	int limit = 0;
