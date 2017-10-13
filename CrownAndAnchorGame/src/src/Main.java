@@ -25,7 +25,7 @@ public class Main {
             
             for (int i = 0; i < 100; i++)
             {
-            	String name = "Fred";
+            	String name = player.getName();
             	int balance = 100;
             	int limit = 5;
                 player = new Player(name, balance);
