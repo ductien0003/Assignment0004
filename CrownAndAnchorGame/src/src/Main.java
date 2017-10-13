@@ -76,6 +76,8 @@ public class Main {
             totalWins += winCount;
             totalLosses += loseCount;
 
+		//Game ends when the balance is not 0.
+
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
