@@ -24,7 +24,8 @@ public class Main {
             int loseCount = 0;
             
             for (int i = 0; i < 100; i++)
-            {
+            { 
+		//Bug 1- Name of the player is always FRed.
             	String name = "Fred";
             	int balance = 100;
             	int limit = 0;
