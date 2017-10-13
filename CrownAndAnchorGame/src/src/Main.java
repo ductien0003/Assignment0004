@@ -25,7 +25,7 @@ public class Main {
             
             for (int i = 0; i < 100; i++)
             { 
-		//Bug 1- Name of the player is always FRed.
+		//Bug - Name of the player is always FRed.
             	String name = "Fred";
             	int balance = 100;
             	int limit = 0;
@@ -36,6 +36,8 @@ public class Main {
                 System.out.println(String.format("Start Game %d: ", i));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
                 		player.getName(), player.getBalance(), player.getLimit()));
+
+		//Bug - Player amount doesn't increase even if he wins the match
 
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
