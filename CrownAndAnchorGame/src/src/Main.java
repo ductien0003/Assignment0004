@@ -1,6 +1,6 @@
 import java.util.List;
 import java.io.*;
-
+import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
@@ -10,8 +10,10 @@ public class Main {
         Dice d1 = new Dice();
         Dice d2 = new Dice();
         Dice d3 = new Dice();
+		Scanner Scanner=new(System.out);
+		String pName=Scanner.nextLine();
 
-        Player player = new Player("Fred", 100);
+        Player player = new Player(pName, 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
 
@@ -25,10 +27,10 @@ public class Main {
             
             for (int i = 0; i < 100; i++)
             {
-            	String name = "Fred";
+
             	int balance = 100;
             	int limit = 0;
-                player = new Player(name, balance);
+                player = new Player(pName, balance);
                 player.setLimit(limit);
                 int bet = 5;
 
