@@ -10,8 +10,12 @@ public class Main {
         Dice d1 = new Dice();
         Dice d2 = new Dice();
         Dice d3 = new Dice();
+		System.out.println("Please Enter your Name: ")
 		Scanner Scanner=new(System.out);
 		String pName=Scanner.nextLine();
+		System.out.println("Please Enter your Age, note: the program would terminate if you are under 18");
+		int Age=Scanner.nextInt();
+		if (Age<18) throw new IllegalAccessException("You cannot play if you are under 18");
 
         Player player = new Player(pName, 100);
         Game game = new Game(d1, d2, d3);
