@@ -17,6 +17,9 @@ public class Main {
 		int Age=Scanner.nextInt();
 		if (Age<18) throw new IllegalAccessException("You cannot play if you are under 18");
 
+		System.out.println("bet your each round:");
+		int bet= Scanner.nextInt();
+		
         Player player = new Player(pName, 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
@@ -36,7 +39,7 @@ public class Main {
             	int limit = 0;
                 player = new Player(pName, balance);
                 player.setLimit(limit);
-                int bet = 5;
+               
 
                 System.out.println(String.format("Start Game %d: ", i));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
@@ -58,7 +61,7 @@ public class Main {
                     		cdv.get(0), cdv.get(1), cdv.get(2));
                     
                     if (winnings > 0) {
-						
+						winnings=winnings-bet;
 	                    System.out.printf("%s won %d, balance now %d\n\n",
 	                    		player.getName(), winnings, player.getBalance());
 	                	winCount++; 
